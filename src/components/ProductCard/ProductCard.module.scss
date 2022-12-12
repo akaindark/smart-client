@@ -1,0 +1,87 @@
+.card {
+  width: 254px;
+  margin: 20px;
+  transition: box-shadow .3s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 20px 6px #ebebeb;
+  }
+}
+
+.link {
+  display: inline-block;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 1px;
+}
+
+.img {
+  width: 100%;
+  height: 254px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.info{
+  padding: 15px 15px 0;
+  border: 1px solid #e8e8e8;
+}
+
+.priceInner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.smallText{
+  font-size: 14px;
+  color: #a6a6a6;
+  margin-bottom: 6px;
+  display: block;
+}
+.oldPrice{
+  font-size: 14px;
+  color: #a6a6a6;
+  margin-bottom: 6px;
+  text-align: right;
+  display: block;
+}
+
+.price{
+  font-size: 18px;
+  color: #000;
+}
+
+.fullPrice{
+  font-size: 18px;
+  color: #bf0000;
+}
+
+.colorText{
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #a6a6a6;
+  margin-bottom: 10px;
+}
+
+.colorList{
+  padding: 0 0 10px;
+  display: flex;
+}
+
+.colorItem{
+  width: 30px;
+  height: 30px;
+  border: 2px solid grey;
+  border-radius: 100%;
+  margin: 0 5px;
+  cursor: pointer;
+}

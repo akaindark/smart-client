@@ -1,0 +1,95 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  background-color: #37474f;
+}
+
+.headerList{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerItem{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #283236;
+  transition: background-color .3s ease-in;
+
+  &:hover,
+  &:focus{
+    background-color: #283236;
+  }
+}
+
+.logo {
+  img{
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.logoText {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.textYellow {
+  color: #ffcc33;
+}
+
+.headerSearch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.smallTextMenu{
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+.menuIcon{
+  width: 35px;
+}
+.menuBtn{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.menuIcon{
+  width: 35px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  margin-bottom: 6px;
+
+  &:first-child{
+    background-color: #ffcc33;
+  }
+}

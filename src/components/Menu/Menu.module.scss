@@ -1,0 +1,41 @@
+.menu{
+  position: absolute;
+  left: 80px;
+  top: 0;
+  bottom: 0;
+  width: 330px;
+  background-color: #36474f;
+  box-shadow: 5px 0 25px 5px #253137;
+}
+
+.menuList{
+  padding: 70px 30px 50px;
+}
+
+.menuItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #efefef;
+  border-bottom: 1px solid #4d6570;
+  padding: 15px 25px 14px 8px;
+  transition: .5s linear all;
+  cursor: pointer;
+
+  &:hover,
+  &:focus{
+    background: #4d6570;
+    border-bottom: 1px solid #4d6570;
+  }
+}
+
+.arrowIcon{
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  svg{
+    color: #ffcc33;
+  }
+}
