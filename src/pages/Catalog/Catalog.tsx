@@ -1,14 +1,16 @@
-import React from "react";
-import PromoBanner from "../../components/PromoBanner";
-import Breadcrumbs from "../../components/Breadcrumbs";
-import ProductCard from "../../components/ProductCard";
+import React, { useContext } from 'react';
+import PromoBanner from '../../components/PromoBanner';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import ProductCard from '../../components/ProductCard';
 
 // @ts-ignore
-import classes from "./Catalog.module.scss";
-import SocialBlock from "../../components/SocialBlock";
-import Advantages from "../../components/Advantages";
+import classes from './Catalog.module.scss';
+import SocialBlock from '../../components/SocialBlock';
+import Advantages from '../../components/Advantages';
+import { Context } from '../..';
 
 const Catalog: React.FC = () => {
+  const { device }: any = useContext(Context);
   return (
     <>
       <main className={classes.content}>
@@ -37,42 +39,9 @@ const Catalog: React.FC = () => {
         </ul>
 
         <ul className={classes.productList}>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
-          <li className={classes.productItem}>
-            <ProductCard />
-          </li>
+          {device.devices.map((device) => (
+            <ProductCard key={device.id} device={device} />
+          ))}
         </ul>
 
         <ul className={classes.paginationList}>
